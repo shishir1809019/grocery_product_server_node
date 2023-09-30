@@ -10,4 +10,4 @@ Client side code-link: https://github.com/shishir1809019/grocery_product_client
 - Here get , post api was being used.
 - By using this server user and admin can modify their data.
 
-- An another server create with django the github link is: https://github.com/shishir1809019/grocery_product_server
+- An another server create with **django** the github link is: https://github.com/shishir1809019/grocery_product_server

@@ -28,9 +28,7 @@ connection.connect((err) => {
   console.log('Connected to MySQL');
 });
 
-// Define routes for adding and retrieving grocery products
 
-// Add a new grocery product (POST request)
 app.post('/products', (req, res) => {
   const { name, price, description, photo_url, product_in_stock } = req.body;
   const productData = {
@@ -41,7 +39,7 @@ app.post('/products', (req, res) => {
     product_in_stock,
   };
 
-  connection.query('INSERT INTO products SET ?', productData, (err, results) => {
+  connection.query('INSERT INTO grocery_list SET ?', productData, (err, results) => {
     if (err) {
       console.error('Error inserting product:', err);
       res.status(500).send('Error inserting product');

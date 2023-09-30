@@ -50,7 +50,7 @@ app.post('/products', (req, res) => {
   });
 });
 
-// Get all grocery products (GET request)
+// Get all grocery products
 app.get('/products', (req, res) => {
   connection.query('SELECT * FROM grocery_list', (err, results) => {
     if (err) {
